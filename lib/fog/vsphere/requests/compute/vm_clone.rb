@@ -175,6 +175,7 @@ module Fog
           virtual_machine_config_spec.memoryHotAddEnabled = options['memoryHotAddEnabled'] if ( options.key?('memoryHotAddEnabled') )
           virtual_machine_config_spec.firmware = options['firmware'] if ( options.key?('firmware') )
           virtual_machine_config_spec.extraConfig = extra_config(extra_config: options['extraConfig']) if ( options.key?('extraConfig') )
+          virtual_machine_config_spec.annotation = options['annotation'] if ( options.key?('annotation') )
           # Options['customization_spec']
           # OLD Options still supported
           # * domain <~String> - *REQUIRED* - Sets the server's domain for customization
